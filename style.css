@@ -1,0 +1,150 @@
+:root {
+    --bg1: #fff9db;
+    --bg2: #ffe066;
+    --primary: #f59f00;
+    --accent: #fcc419;
+    --text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, var(--bg1), var(--bg2));
+    color: var(--text);
+    padding-top: 90px;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 224, 102, 0.4);
+    backdrop-filter: blur(12px);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(245, 159, 0, 0.4);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #b08900;
+    margin: 0 8px;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid rgba(245, 159, 0, 0.4);
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(245, 159, 0, 0.25);
+}
+
+
+h1, h2, h3 {
+    font-family: 'Fira Code', monospace;
+}
+
+h1 {
+    color: var(--primary);
+}
+
+h2 {
+    color: var(--accent);
+}
+
+p {
+    color: #555;
+}
+
+
+.project-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-left: 4px solid var(--primary);
+    background: #fff3bf;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+}
+
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--accent);
+    color: #333;
+    transform: scale(1.05);
+}
+/* CONTACT FORM FIX */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input,
+.form-row textarea {
+    flex: 1;
+}
+
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+}
+
+form textarea {
+    resize: none;
+}
+
+
+.card {
+    max-width: 500px;
+}
